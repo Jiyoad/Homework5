@@ -1,0 +1,196 @@
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  background-image: url("Assets/double-bubble-dark.png");
+}
+
+textarea{
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #000000;
+  border-left: 1px solid black;
+  padding: 10px;
+}
+
+.col-md-1, .col-md-2, .col-md-9 {
+  padding: 0;
+}
+
+.smimage{
+  border-radius: 50%;
+  width: 10%;
+  float: left;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.603);
+  position: absolute;
+  right: 2%;
+  top: 1%;
+}
+
+.container{ 
+  /* provides spacing between the top and bottom nav bars and the content */
+  margin-top: 20px;
+  margin-bottom: 80px;
+  
+  /* provide spaceing around the text */
+  padding: 10px;
+}
+
+.rowPlan{
+  height: 50px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  font-size: 2em;
+  line-height: 1.5;
+  border-radius: 10px;
+}
+
+.timeBox{
+  background-image: linear-gradient(white, black);
+  color: rgb(255, 255, 255);
+  height:100%;
+  width: 100%;
+  text-align: center;
+  border-radius: 10px 0px 0px 10px;
+  display: inline-block;
+  font-size: 1em;
+}
+
+.dailyPlan {
+  color: black;  
+  font-size: 12pt;
+  height:100%;
+  width: 100%;
+}
+
+
+input{
+  color: indianred;
+  background-color: transparent;
+  border: none;
+}
+textarea{
+  color: indianred
+}
+
+
+input, select, textarea{
+  color: indianred;
+ font-size: 30px;
+}
+textarea:focus, input:focus {
+  color: indianred;
+  font-size: 30px;
+}
+
+
+.jumbotron {
+  text-align: center;
+  background-image: linear-gradient(white, black);
+  border-bottom: 5px solid black;
+}
+
+.description{
+  white-space: pre-wrap;
+}
+
+.timeblock{
+  text-align: center;
+  border-radius: 15px;
+}
+
+.saveIco { 
+  border-radius: 10px;
+  background-color: rgb(101, 179, 0);
+  background-image: url(save-icon.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* float: right; */
+  font-size: 1.5em;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+
+.display-3{
+  
+  color: indianred;
+  text-shadow: 4px 4px 4px rgba(105, 47, 47, 0.63);
+}
+
+.lead{
+  color: olive;
+  text-shadow: 4px 4px 4px rgba(32, 32, 0, 0.726);
+}
+
+.current-day{
+  color: rgb(172, 77, 77);
+  text-shadow: 4px 4px 4px rgba(59, 27, 27, 0.753);
+}
+
+.current-minute{
+  position: absolute;
+  left: 1%;
+  top: 1%;
+  color: olive;
+  text-shadow: 2px 2px 4px rgba(32, 32, 0, 0.726);
+}
+
+.row {
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid white;;
+}
+
+.hour {
+  background-color: #ffffff;
+  color: #000000;
+  border-top: 1px dashed #000000;
+}
+
+.past {
+  background-color: rgb(255, 187, 187);
+  color: white;
+}
+
+.present {
+  background-color: rgb(255, 239, 149);
+  color: white;
+}
+
+.future {
+  background-color: rgb(90, 255, 99);
+  color: white;
+}
+
+.saveBtn {
+  border-left: 1px solid black;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #06AED5;
+  color: white;
+}
+
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all .3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .rowPlan {
+    height: 100%;
+    border-radius: 10;
+    margin: 10px;
+  }
+
+  .saveIco { border-radius: 0 0 10px 10px; }
+
+  .timeBox { border-radius: 10px 10px 0 0; }
+}
