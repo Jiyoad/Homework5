@@ -187,6 +187,5 @@ $(document).on('change', 'input', function (event) {
 
   let i = $(this).attr('hour-index');
 
-  // add shadow pulse class
   $(`#saveid-${i}`).css('background-color','red');
 });
